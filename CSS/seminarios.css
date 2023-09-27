@@ -1,0 +1,53 @@
+.containerVideo{
+    box-sizing: border-box;
+    padding: 0;
+    width:100%;
+    display: inline-flex;
+    flex-direction: row;
+}
+.video{
+    display: inline-flex;
+    width:77%;
+}
+.fm-video{
+    width: 100%;
+    box-shadow: 0px 0px 6px 0px rgb(0, 0, 0, .5);
+}
+.fm-video .vjs-control-bar{
+    height: 40px;
+}
+.video-js .vjs-control{
+    width: 5em;
+}
+.video-js{
+    font-size: 13px;
+}
+.cartel{
+    box-sizing: border-box;
+    width:23%;
+}
+.container-seminarios{
+    display: inline-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.container-seminarios .titulo-seminario{
+    background:rgb(28, 61, 108); 
+    padding-top: 5px;
+    padding-left: 10px;
+    color: aliceblue;
+}
+.seminario a{
+    text-decoration: none;
+    color: black;
+}
+.seminario div{
+    border-bottom: 1px solid rgb(0, 0, 0, .3);
+}
+.seminario div:hover{
+    background: #fafafa;
+    text-decoration: underline;
+}
+.fondo-gris{
+    background: #e4e4e4;
+}

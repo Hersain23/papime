@@ -1,0 +1,50 @@
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 250px;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgb(70, 70, 70);
+    opacity: .35;
+}
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background:rgb(82,178,137);
+}
+.titleNosotros{
+    position: absolute;
+    top: 30%;
+    font-size:80pt;
+    line-height: .7;
+    font-family: Oswald;
+    color: black;
+}
+
+.titleObjetivos{
+    font-family: 'Open Sans';
+    font-size: 15pt;
+}
+
+.titleObjetivo{
+    font-family: 'Open Sans';
+    font-size:30px;
+    font-weight: 600;
+}
+.containerObjets{
+    height: 585px;
+}
+
+
+

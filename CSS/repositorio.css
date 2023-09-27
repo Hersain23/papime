@@ -1,0 +1,25 @@
+.fontTitleCardR{
+	font-family: Oswald;
+    font-size: 14pt;
+}
+.fontBodyCardR{
+	font-family: 'Open Sans';
+    font-size: 10pt;
+}
+.fontTitle{
+    font-family: Oswald;
+    font-size: 38pt;
+}
+.fontTitleCategory{
+	font-family: Oswald;
+    font-size: 20pt;
+	color: rgb(0, 122, 179);
+}
+.fontBodyCategory{
+	font-family: 'Open Sans';
+    font-size: 11pt;
+	text-align: justify;
+}
+.borderCategory{
+	border: 1px solid rgba(63, 63, 63, 0.233);
+}

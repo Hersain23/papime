@@ -1,0 +1,28 @@
+a.paper{
+    text-decoration: none;
+}
+.titlePaper{
+    font-size: 15px;
+    font-weight: bold;
+    color:rgb(1, 134, 243);
+}
+.titlePaper:hover{
+    text-decoration: underline;
+}
+.autorPaper{
+    font-size: 14px;
+}
+.magazine{
+    font-size: 13px;
+    color:rgb(1, 86, 243);
+}
+.magazine:hover{
+    text-decoration: underline;
+}
+.dataMagazine{
+    font-size: 13px;
+}
+.url:hover{
+    text-decoration: underline;
+    color:rgb(1, 134, 243);
+}

@@ -1,0 +1,142 @@
+.bo{
+    border: 1px solid black;
+}
+.mBottom{
+    margin-bottom: 25px;
+}
+.mTop{
+    margin-top: 10px;
+}
+.mTop-5{
+    margin-top: 5px;
+}
+.mTop-25{
+    margin-top: 25px;
+}
+.mBottom-5{
+    margin-bottom: 5px;
+}
+.mBottom-25{
+    margin-bottom: 25px;
+}
+.mLeft-70{
+    margin-left: 70px;
+}
+.mRight{
+    margin-right: 5px;
+}
+.mRight-10{
+    margin-right: 10px;
+}
+.pLeft{
+    padding-left: 10px;
+}
+.pTop{
+    padding-top: 10px;
+}
+.pBottom{
+    padding-bottom: 15px;
+}
+.mGeneral{
+    margin: 10px;
+}
+.backgroundPurple{
+    background: rgb(102, 51, 153);
+}
+.backgroundBlue{
+    background: rgb(33, 103, 197);
+}
+.backgroundGrises{
+    background-color: rgb(248, 248, 248);
+}
+.backgroundWhite{
+    background: rgb(255, 255, 255);
+}
+.btnPurple{
+    border:1px solid rgb(139, 83, 254);
+    background:rgb(139, 83, 254);
+}
+.containTitle{
+    height:120px;
+}
+.stripe{
+    background:rebeccapurple;
+    height: 10px;
+}
+.stripeS{
+    background:black;
+    height: 2px;
+    margin-bottom: 5px;
+}
+.myoverflowSix{
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+     -webkit-line-clamp: 6;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: normal;
+     text-align: justify;
+}
+.myoverflow{
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: normal;
+}
+.myoverflowS{
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+     -webkit-line-clamp: 1;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: normal;
+}
+.myoverflowT{
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+     -webkit-line-clamp: 3;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: normal;
+}
+.shadowBox{
+    border-radius: 5px;
+    border: 1px solid rgba(14, 14, 14, 0.267);
+}
+footer{
+    background:rgb(28, 61, 108); 
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration:underline;
+}
+span a{
+    margin-left:10px;
+}
+footer span a:hover{
+    text-decoration:none;
+}
+.footerLogo{
+    width: 95px;
+}
+.titleFooter{
+    font-family: 'Open Sans';
+    font-size: 15pt;
+}
+.fontBody{
+    font-family: 'Open Sans';
+    font-size: 13pt;
+    line-height: 1.6;
+}
+
+.fontFooter{
+    font-family: 'Open Sans';
+    font-size: 12pt;
+    line-height: 1.2;
+}
