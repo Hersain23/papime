@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/objetivos.css">
     <link rel="stylesheet" href="CSS/general.css">
     <link rel="stylesheet" href="CSS/card.css">
+    <link rel="stylesheet" href="CSS/load.css">
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Oswald%3A400%2C600%2C700%7COpen%20Sans%3A400%2C600%2C700&amp;display=swap" rel="stylesheet" nonce="">
     <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:300,400,500,700|Source+Code+Pro:400,700&amp;display=swap" rel="stylesheet" nonce="">
@@ -16,6 +17,9 @@
     
 </head>
 <body>
+  <div class="load">
+    <img src="IMG/load2.gif" alt="">
+</div>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -1176,7 +1180,12 @@
         </div>
       </div>
   </footer>
-
+<script>
+   document.addEventListener('DOMContentLoaded',()=>{
+        let load = document.querySelector('.load')
+      load.style.display = 'none'
+      })
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="JS/card.js"></script>
