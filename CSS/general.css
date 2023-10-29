@@ -140,3 +140,73 @@ footer span a:hover{
     font-size: 12pt;
     line-height: 1.2;
 }
+
+@media (max-width: 1220px) {
+    #containerCol{
+        display: inline-flex;
+    }
+    #containerCol .column1{
+        width: 45%;
+    }
+}
+@media (max-width: 1145px) {
+    #containerCol{
+        display: inline-flex;
+    }
+    #containerCol .column1{
+        width: 50%;
+    }
+}
+@media (max-width: 1025px) {
+    #containerCol{
+        display: inline-flex;
+    }
+    #containerCol .column1{
+        width: 55%;
+    }
+}
+
+@media (max-width: 1025px) {
+    #containerCol{
+        display: inline-flex;
+    }
+    #containerCol .column2{
+        width: 45%;
+        
+    }
+    #containerCol .column3{
+        width: 45%;
+        
+}
+}
+@media (max-width: 941px) {
+    #containerCol{
+        display: inline-flex;
+    }
+    #containerCol .column1{
+        width: 60%;
+    }
+    #containerCol .column2{
+        width: 40%;
+       
+    }
+    #containerCol .column3{
+        width: 45%;
+        
+    }
+}
+
+@media (max-width: 860px) {
+    #containerCol{
+        display: inline-flex;
+    }
+    #containerCol .column1{
+        width: 100%;
+    }
+    #containerCol .column2{
+        width: 100%;
+    }
+    #containerCol .column3{
+        width: 60%;
+    }
+}

@@ -28,3 +28,26 @@ picture img{
     font-weight: 600;
     font-size: 23pt;
 }
+
+
+@media (max-width: 1900px) {
+    .frontPage{
+        width: 100%;
+        height: 50%;
+    }
+}
+@media (max-width: 620px) {
+    .infoQuery{
+        width: 100%;
+        height: 50%;
+    }
+    .containerImages{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .quienesInfo{
+        width: 100%;
+        height: 25%;
+    }
+}
