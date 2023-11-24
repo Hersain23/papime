@@ -127,20 +127,28 @@ footer span a:hover{
 }
 .titleFooter{
     font-family: 'Open Sans';
-    font-size: 15pt;
+    font-size: 20px;
+    font-weight: bold;
+}
+.titleInfo{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 25px;
 }
 .fontBody{
     font-family: 'Open Sans';
-    font-size: 13pt;
+    font-size: 17px;
     line-height: 1.6;
 }
 
 .fontFooter{
     font-family: 'Open Sans';
-    font-size: 12pt;
+    font-size: 17px;
     line-height: 1.2;
 }
-
+hr{
+    display: none;
+}
 @media (max-width: 1220px) {
     #containerCol{
         display: inline-flex;
@@ -194,6 +202,7 @@ footer span a:hover{
         width: 45%;
         
     }
+    
 }
 
 @media (max-width: 860px) {
@@ -208,5 +217,8 @@ footer span a:hover{
     }
     #containerCol .column3{
         width: 60%;
+    }
+    hr{
+        display: flex;
     }
 }

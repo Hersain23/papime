@@ -1,5 +1,5 @@
 .logoCover{
-    width: 20%;
+    width: 25%;
 }
 section{
     margin-top: 45px;
@@ -26,7 +26,7 @@ picture img{
 .titleHome{
     font-family: 'Open Sans';
     font-weight: 600;
-    font-size: 23pt;
+    font-size: 35px;
 }
 
 
@@ -36,7 +36,21 @@ picture img{
         height: 50%;
     }
 }
+
+@media (max-width: 1440px) {
+    .logoCover{
+        width: 30%;
+    }
+}
+@media (max-width: 780px) {
+    .logoCover{
+        width: 34%;
+    }
+}
 @media (max-width: 620px) {
+    .logoCover{
+        width: 45%;
+    }
     .infoQuery{
         width: 100%;
         height: 50%;
