@@ -2,7 +2,7 @@ a.paper{
     text-decoration: none;
 }
 .titlePaper{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     color:rgb(1, 134, 243);
 }
@@ -22,7 +22,21 @@ a.paper{
 .dataMagazine{
     font-size: 13px;
 }
+
 .url:hover{
     text-decoration: underline;
     color:rgb(1, 134, 243);
 }
+.iconC{
+    width: 25px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+  

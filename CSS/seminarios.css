@@ -32,10 +32,10 @@
     box-sizing: border-box;
 }
 .container-seminarios .titulo-seminario{
-    background:rgb(28, 61, 108); 
+    background:rgb(143, 81, 253); 
     padding-top: 5px;
     padding-left: 10px;
-    color: aliceblue;
+    color: white;
 }
 .seminario a{
     text-decoration: none;

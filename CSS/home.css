@@ -1,67 +1,9 @@
-.logoCover{
-    width: 25%;
-}
-section{
-    margin-top: 45px;
-    height: 60vh;
-}
-picture img{
-    width: 360px;
-}
-.mbottom{
-    margin-bottom:60px;
-}
-
-.infoHome{
-    padding: 5px 15px;
-    text-align: justify;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    height: 115px;
-    transition: height 1s;
-}
-.titleHome{
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-size: 35px;
-}
-
-
-@media (max-width: 1900px) {
-    .frontPage{
-        width: 100%;
-        height: 50%;
-    }
-}
-
-@media (max-width: 1440px) {
-    .logoCover{
-        width: 30%;
-    }
-}
-@media (max-width: 780px) {
-    .logoCover{
-        width: 34%;
-    }
-}
-@media (max-width: 620px) {
-    .logoCover{
-        width: 45%;
-    }
-    .infoQuery{
-        width: 100%;
-        height: 50%;
-    }
-    .containerImages{
-        display: none;
-        width: 0;
-        height: 0;
-    }
-    .quienesInfo{
-        width: 100%;
-        height: 25%;
-    }
-}
+video{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    width: 100%;
+    height: 50%;
+    padding: 0; margin: 0;
+  }
