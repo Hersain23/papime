@@ -165,7 +165,7 @@ selectFilterC.addEventListener('change', function() {
 
 function renderArticlesC(filter){
   let filteredArticles;
-
+  let articleMuestra,articleNoMuestra;
   switch(filter) {
     case '1':
       // Filtrar por número de citas
@@ -258,7 +258,7 @@ selectFilterT.addEventListener('change', function() {
 
 function renderArticlesT(filter){
   let filteredArticles;
-
+  let articleMuestra,articleNoMuestra;
   switch(filter) {
     case '1':
       // Filtrar por número de citas
@@ -278,7 +278,9 @@ function renderArticlesT(filter){
       filteredArticles = tics.filter(tic => tic.Metodologia === 'Estudio Cuasi-Experimental');
       break;
     case 'Estudio No Experimental Mediante Encuesta Basado en una Muestra Representativa':
-      filteredArticles = tics.filter(tic => tic.Metodologia === 'Estudio No Experimental Mediante Encuesta Basado en una Muestra Representativa');
+      articleMuestra = tics.filter(tic => tic.Metodologia === 'Estudio No Experimental Mediante Encuesta Basado en una Muestra Representativa');
+      articleNoMuestra = tics.filter(tic => tic.Metodologia === 'Estudio No Experimental Mediante Encuesta Basado en una Muestra No Representativa');
+      filteredArticles = articleMuestra.concat(articleNoMuestra);
       break;
     case 'Argentina':
       // Filtrar por país
@@ -375,36 +377,44 @@ function renderArticlesV(filter){
       filteredArticles = vinculacion.filter(vinculacio => vinculacio.Metodologia === 'Estudio No Experimental Mediante Encuesta Basado en una Muestra Representativa');
       break;
     case 'Argentina':
-      // Filtrar por país
-      filteredArticles = vinculacion.filter(vinculacio => vinculacio.Pais === 'Argentina');
+      filteredArticles = vinculacion.filter((vinculacio)=>{
+        return vinculacio.Pais.includes('Argentina')
+      })
       break;
     case 'Chile':
-        // Filtrar por país
-      filteredArticles = vinculacion.filter(vinculacio => vinculacio.Pais === 'Chile');
+      filteredArticles = vinculacion.filter((vinculacio)=>{
+        return vinculacio.Pais.includes('Chile')
+      })
       break;
     case 'Colombia':
-        // Filtrar por país
-      filteredArticles = vinculacion.filter(vinculacio => vinculacio.Pais === 'Colombia');
+      filteredArticles = vinculacion.filter((vinculacio)=>{
+        return vinculacio.Pais.includes('Colombia')
+      })
       break;
     case 'Cuba':
-        // Filtrar por país
-      filteredArticles = vinculacion.filter(vinculacio => vinculacio.Pais === 'Cuba');
+      filteredArticles = vinculacion.filter((vinculacio)=>{
+        return vinculacio.Pais.includes('Cuba')
+      })
       break;
     case 'Ecuador':
-          // Filtrar por país
-      filteredArticles = vinculacion.filter(vinculacio => vinculacio.Pais === 'Ecuador');
+      filteredArticles = vinculacion.filter((vinculacio)=>{
+        return vinculacio.Pais.includes('Ecuador')
+      })
       break;
     case 'Mexico':
-          // Filtrar por país
-      filteredArticles = vinculacion.filter(vinculacio => vinculacio.Pais === 'Mexico');
+      filteredArticles = vinculacion.filter((vinculacio)=>{
+        return vinculacio.Pais.includes('Mexico')
+      })
       break;
     case 'Paraguay':
-        // Filtrar por país
-      filteredArticles = vinculacion.filter(vinculacio => vinculacio.Pais === 'Paraguay');
+      filteredArticles = vinculacion.filter((vinculacio)=>{
+        return vinculacio.Pais.includes('Paraguay')
+      })
       break;
     case 'Peru':
-        // Filtrar por país
-      filteredArticles = vinculacion.filter(vinculacio => vinculacio.Pais === 'Peru');
+      filteredArticles = vinculacion.filter((vinculacio)=>{
+        return vinculacio.Pais.includes('Peru')
+      })
       break;
     default:
       filteredArticles = vinculacion;

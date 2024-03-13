@@ -160,7 +160,7 @@ selectFilterS.addEventListener('change', function() {
 
 function renderArticlesS(filter){
   let filteredArticles;
-
+  let articleMuestra,articleNoMuestra;
   switch(filter) {
     case '1':
       // Filtrar por número de citas
@@ -171,7 +171,7 @@ function renderArticlesS(filter){
       filteredArticles = software.sort((a, b) => b.Anio - a.Anio);
       break;
     case 'Estudio de Caso Cualitativo':
-      filteredArticles = software.filter(article => article.Metodologia === 'Estudio de Caso Cualitativo ');
+      filteredArticles = software.filter(article => article.Metodologia === 'Estudio de Caso Cualitativo');
       break;
     case 'Revisión bibliográfica':
       filteredArticles = software.filter(article => article.Metodologia === 'Revisión bibliográfica');
@@ -180,7 +180,9 @@ function renderArticlesS(filter){
       filteredArticles = software.filter(article => article.Metodologia === 'Estudio Cuasi-Experimental');
       break;
     case 'Estudio No Experimental Mediante Encuesta Basado en una Muestra Representativa':
-      filteredArticles = software.filter(article => article.Metodologia === 'Estudio No Experimental Mediante Encuesta Basado en una Muestra Representativa');
+      articleMuestra = software.filter(article => article.Metodologia === 'Estudio No Experimental Mediante Encuesta Basado en una Muestra Representativa');
+      articleNoMuestra = software.filter(article => article.Metodologia === 'Estudio No Experimental Mediante Encuesta Basado en una Muestra No Representativa');
+      filteredArticles = articleMuestra.concat(articleNoMuestra);
       break;
     case 'Argentina':
       // Filtrar por país
@@ -215,7 +217,7 @@ function renderArticlesS(filter){
       filteredArticles = software.filter(article => article.Pais === 'Peru');
       break;
     default:
-      filteredArticles = articles;
+      filteredArticles = software;
   }
 
   let fragment = new DocumentFragment();
@@ -273,7 +275,7 @@ function renderArticlesC(filter){
       filteredArticles = ciberseguridad.filter(tic => tic.Metodologia === 'Estudio Cuasi-Experimental');
       break;
     case 'Estudio No Experimental Mediante Encuesta Basado en una Muestra Representativa':
-      filteredArticles = ciberseguridad.filter(tic => tic.Metodologia === 'Estudio No Experimental Mediante Encuesta Basado en una Muestra Representativa');
+      filteredArticles = ciberseguridad.filter(tic => tic.Metodologia === 'Estudio No Experimental Mediante Encuesta Basado en una Muestra No Representativa');
       break;
     case 'Argentina':
       // Filtrar por país
